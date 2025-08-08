@@ -29,5 +29,5 @@ Instead of storing all possible actions and outcomes, it uses deep learning to e
 ## Final Thoughts
 
 I really enjoyed working on this project because it let me solve a real-world problem and explain the process in a way that's easy to follow.  
-It helped me improve both my technical skills and my ability to communicate clearly—something I care a lot about.
+It helped me improve both my technical skills and my ability to communicate clearly.
 
