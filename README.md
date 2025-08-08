@@ -2,16 +2,14 @@
 
 In this project, I explored how to use **Reinforcement Learning (RL)** to group parts of a map into regions that are both connected and similar. This is helpful for things like city planning or organizing areas based on population, income, or other data.
 
----
-
 ## What is Reinforcement Learning?
 
 Reinforcement Learning is a type of machine learning where a model learns by trying things out. It takes an action, gets feedback (like a reward or a penalty), and uses that to improve itself.  
 It’s similar to learning a game by playing it and figuring out what works through trial and error.
 
-Instead of giving the model fixed rules, I used **Deep Q-Networks (DQN)** so it could learn the best way to group areas on its own by interacting with the data.
-
 ---
+
+Instead of giving the model fixed rules, I used **Deep Q-Networks (DQN)** so it could learn the best way to group areas on its own by interacting with the data.
 
 ## What is DQN (Deep Q-Network)?
 
