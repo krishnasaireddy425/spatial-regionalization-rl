@@ -1,50 +1,20 @@
 # Spatial Regionalization using Reinforcement Learning (DQN)
 
-This project explores **spatial regionalization** — the division of space into contiguous, similar regions — using **Deep Q-Networks (DQN)**. It compares a Reinforcement Learning (RL)-based approach against the Region2Vec baseline.
+In this project I explored how to use Reinforcement Learning (RL) to group parts of a map into regions that are both connected and similar. This is helpful for things like city planning or organizing areas based on population, income, or other data.
 
----
+What is Reinforcement Learning?
+Reinforcement Learning is a type of machine learning where a model learns by trying things out. It takes an action, gets feedback (like a reward or a penalty) and uses that to improve itself. It’s similar to learning a game by playing it and figuring out what works through trial and error.
 
-## 📂 Project Structure
-- `notebook/` — Jupyter Notebook implementing the DQN model.
-- `data/` — Dataset used (feature matrix from Region2Vec).
-- `report/` — Detailed project report (PDF).
+Instead of giving the model fixed rules, I used Deep Q-Networks (DQN) so it could learn the best way to group areas on its own by interacting with the data.
 
----
+What is DQN (Deep Q-Network)?
+DQN is a type of reinforcement learning that uses a neural network to help the model make better decisions. Instead of storing all possible actions and outcomes it uses deep learning to estimate which action is likely to give the best result.
 
-##  Project Overview
+Here’s what I did:
+ - Used a real-world dataset that was also used in past research
+ - Built and trained a DQN model using Python and TensorFlow
+ - Created a reward system to help the model understand what good grouping looks like
+ - Compared my model’s performance with a traditional method called Region2Vec
+ - Visualized the results to show how the model got better over time
 
-Spatial regionalization is essential for fields like urban planning and GIS (Geographic Information Systems).  
-The goal: Partition a space into a fixed number of **contiguous, balanced** regions while optimizing certain **attribute similarities**.
-
-Traditional methods struggle with dynamic or large datasets.  
-This project uses **Deep Reinforcement Learning (DQN)** to dynamically learn partitioning strategies, aiming for better adaptability and scalability.
-
----
-
-## ⚙️ Dataset
-- Feature matrix derived from Region2Vec study.
-- File: `data/feature_matrix_f1.csv`
-- Scaled using `MinMaxScaler` to range [0, 1].
-
----
-
-## 🏗️ Approach
-
-- Build a DQN model with two hidden layers (64 neurons each, ReLU activation).
-- Implement an **epsilon-greedy strategy** for balancing exploration and exploitation.
-- Define a simple simulation environment to train the agent.
-- Evaluate model using cluster quality metrics.
-
----
-
-## 🎯 Epsilon in Reinforcement Learning
-
-In Reinforcement Learning, **epsilon (ε)** controls the trade-off between:
-- **Exploration** (trying new actions to discover better strategies).
-- **Exploitation** (using known actions to maximize reward).
-
-**In this project:**
-```python
-epsilon = 1.0
-epsilon_min = 0.01
-epsilon_decay = 0.995
+I really enjoyed working on this project because it let me solve a real problem and explain the process in a way that's easy to follow. It helped me improve both my technical skills and my ability to communicate clearly. 
